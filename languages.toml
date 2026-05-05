@@ -1,0 +1,33 @@
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+feature_words = true
+feature_snippets = true
+snippets_first = true
+snippets_inline_by_word_tail = false
+feature_unicode_input = false
+feature_paths = false
+feature_citations = false
+
+[language-server.pylsp.config.pylsp]
+plugins.pylsp_mypy.enabled = true
+plugins.pylsp_mypy.live_mode = true
+plugins.jedi_completion.enabled = true
+plugins.jedi_completion.include_params = true
+
+[[language]]
+name = "python"
+language-servers = ["pylsp", "scls"]
+
+[[language]]
+name = "latex"
+language-servers = ["texlab", "scls"]
+
+[[language]]
+name = "pdf"
+scope = "source.pdf"
+file-types = ["pdf"]
+roots = []
+language-servers = []
+formatter = { command = "pdftotext", args = ["-layout", "-", "-"] }

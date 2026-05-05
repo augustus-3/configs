@@ -1,0 +1,38 @@
+inherits = "dark_plus"
+
+"ui.background" ={}
+
+"ui.cursor.normal" = { fg = "#1e1e2e", bg = "#4a9eff" }
+"ui.cursor.insert" = { fg = "#4a9eff" }
+"ui.cursor.select" = { underline = { color = "#4a9eff", style = "line" } }
+# Code syntax colors
+"keyword" = { fg = "violet" }
+"function" = { fg = "cyan" }
+"type" = { fg = "yellow" }
+"string" = { fg = "green" }
+"constant.builtin.boolean" = { fg = "orange" }
+"comment" = { fg = "gray" }
+"variable" = { fg = "white" }
+"number" = { fg = "orange" }
+
+"ui.statusline" = { fg = "white", bg = "#1e1e2e" }
+"ui.statusline.inactive" = { fg = "#888888", bg = "#111111" }
+"ui.statusline.normal" = { fg = "#1e1e2e", bg = "#89b4fa", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "#1e1e2e", bg = "#a6e3a1", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "#1e1e2e", bg = "#cba6f7", modifiers = ["bold"] }
+#cursor
+
+# Default text color for unscoped content
+"ui.text" = { fg = "white" }
+
+[palette]
+violet = "#c792ea"
+cyan = "#89ddff"
+yellow = "#ffcb6b"
+green = "#c3e88d"
+orange = "#f78c6c"
+gray = "#546e7a"
+white = "#eeffff"
+red = "#ff5555"
+dark_red = "#8b0000"
+black = "#1a1a1a"
